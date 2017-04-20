@@ -43,16 +43,3 @@ RUN chmod 755 /init && \
     rpm -e kernel-headers && \
     yum clean all && \
     rm -rf /root/statsrelay/
-
-
-
-#
-#
-
-
-#           perl-parent perl-podlators perl-Pod-Escapes perl-Text-ParseWords perl-Time-HiRes
-#           perl-constant perl-threads-shared perl-Encode perl-Pod-Simple perl-Git
-#           perl-Socket perl-Storable perl-Scalar-List-Utils perl-macros perl-File-Temp
-#           perl-Filter perl perl-TermReadKey perl-Thread-Queue perl-HTTP-Tiny perl-Pod-Perldoc
-#           perl-Pod-Usage perl-Exporter perl-Time-Local perl-Carp perl-PathTools perl-libs·
-#           perl-File-Path perl-threads perl-Getopt perl-Error perl-Test-Harness perl-Data-Dumper
