@@ -16,30 +16,8 @@ RUN chmod 755 /init && \
     make all && \
     make install  && \
     yum remove -y cpp autoconf automake gcc libev-devel libyaml-devel make git perl rsync passwd fipscheck libmpc mpfr && \
-    rpm -e basesystem && \
-    rpm -e dbus-python && \
-    rpm -e pygobject3-base && \
-    rpm -e yum-utils && \
-    rpm -e rootfiles && \
-    rpm -e bind-license && \
-    rpm -e less && \
-    rpm -e libgomp && \
-    rpm -e libgnome-keyring && \
-    rpm -e m4 && \
-    rpm -e hostname  && \
-    rpm -e gobject-introspection && \
-    rpm -e acl && \
-    rpm -e libss && \
-    rpm -e iputils && \
-    rpm -e vim-minimal && \
-    rpm -e groff-base && \
-    rpm -e libedit && \
-    rpm -e glibc-devel && \
-    rpm -e dbus-glib && \
-    rpm -e libxml2-python && \
-    rpm -e python-kitchen && \
-    rpm -e glibc-headers && \
-    rpm -e python-chardet && \
-    rpm -e kernel-headers && \
+    rpm -e basesystem dbus-python pygobject3-base yum-utils rootfiles bind-license less libgomp libgnome-keyring m4 hostname \
+           gobject-introspection acl libss iputils vim-minimal groff-base libedit glibc-devel dbus-glib libxml2-python \
+           python-kitchen glibc-headers python-chardetkernel-headers && \
     yum clean all && \
     rm -rf /root/statsrelay/
