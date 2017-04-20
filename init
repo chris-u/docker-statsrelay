@@ -2,4 +2,4 @@
 
 echo "$statsrelay_yaml" > /etc/statsrelay.yaml
 
-exec /usr/local/bin/statsrelay
+exec /usr/local/bin/statsrelay "$@"
