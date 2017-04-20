@@ -1,5 +1,11 @@
 #!/bin/sh
 
-echo "$statsrelay_yaml" > /etc/statsrelay.yaml
+if
+  test -s "statsrelay_yaml" 
+then
+  echo "$statsrelay_yaml" > /etc/statsrelay.yaml
 
-exec /usr/local/bin/statsrelay "$@"
+  exec /usr/local/bin/statsrelay "$@"
+else
+  echo "please set environment variable statsrelay_yaml to contain the configuration for statsrelay"
+fi
