@@ -20,3 +20,5 @@ RUN chmod 755 /init && \
            python-kitchen glibc-headers python-chardet kernel-headers && \
     yum clean all && \
     rm -rf /root/statsrelay/
+
+ENTRYPOINT ["/init"]
