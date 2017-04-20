@@ -2,13 +2,12 @@ FROM centos
 
 MAINTAINER Chris Ulrich <culrich@athenahealth.com>
 
-EDIT https://raw.githubusercontent.com/chris-u/docker-statsrelay/master/init /init 
+COPY https://raw.githubusercontent.com/chris-u/docker-statsrelay/master/init /init 
 
 RUN chmod 755 /init && \
     yum update -y && \
     yum -y install git autoconf automake gcc libev libev-devel libyaml-devel make && \
     cd /root/ && \
-    #git clone https://github.com/chris-u/statsrelay.git && \
     git clone https://github.com/uber/statsrelay.git && \
     cd /root/statsrelay && \
     ./autogen.sh && \
