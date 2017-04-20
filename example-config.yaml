@@ -1,0 +1,6 @@
+statsd:
+  bind: 0.0.0.0:8125
+  validate: true
+  shard_map:
+    0: nodejs.server:8225
+    1: nodejs.server:8325
