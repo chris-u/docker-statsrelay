@@ -2,7 +2,7 @@ FROM centos
 
 MAINTAINER Chris Ulrich <culrich@athenahealth.com>
 
-COPY https://raw.githubusercontent.com/chris-u/docker-statsrelay/master/init /init 
+ADD https://raw.githubusercontent.com/chris-u/docker-statsrelay/master/init /init 
 
 RUN chmod 755 /init && \
     yum update -y && \
