@@ -17,6 +17,6 @@ RUN chmod 755 /init && \
     yum remove -y cpp autoconf automake gcc libev-devel libyaml-devel make git perl rsync passwd fipscheck libmpc mpfr && \
     rpm -e basesystem dbus-python pygobject3-base yum-utils rootfiles bind-license less libgomp libgnome-keyring m4 hostname \
            gobject-introspection acl libss iputils vim-minimal groff-base libedit glibc-devel dbus-glib libxml2-python \
-           python-kitchen glibc-headers python-chardetkernel-headers && \
+           python-kitchen glibc-headers python-chardet kernel-headers && \
     yum clean all && \
     rm -rf /root/statsrelay/
