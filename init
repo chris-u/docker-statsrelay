@@ -1,7 +1,5 @@
 #!/bin/sh
 
-env 
-
 if
   test -n "$statsrelay_yaml" 
 then
